@@ -1,12 +1,20 @@
     .grid-container{
+        background-color: yellow;
     display:grid;
-    grid-template-columns: ; 1fr 1fr 1fr 1fr; /* Two colums with equal 
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Two colums with equal 
     width*/
     gap: 20px; /*gap between the grid*/
     }
 /*style for each grid*/ 
 .grid-item {
+    background-color: green;
 border: 1px slid #ccc;
 padding: 20px;
 text-align: center;
+}
+.grid-item img{
+    width: 300px;
+}
+.grid-item h1{
+    color: red;
 }
