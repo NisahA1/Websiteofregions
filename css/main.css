@@ -10,7 +10,10 @@ body{
     margin-left:10%; /* Remove all the body margins*/
     margin-right: 10%;
     font-size: 120%;
-}
+    background-image: url('new-zealand-map.jpg');
+    background-size: cover;
+    background-position: no-repeat;
+
 h1,h2 {
      font-family:gupter;
      color: #000000;
@@ -33,6 +36,8 @@ h1,h2 {
 nav {
     display: flex;
     background: transparent;
+  
+  
   
 }
 nav a {
