@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 body{
-   font-family: sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    margin:10%; /* Remove all the body margins*/
+    font-size: 120%;
 }
 h1,h2 {
    font-family: 'Mclaren', cursive;
-   color: #f75c03;
+   color: #000000;
 }  
 .main{
     margin-left:1em;
@@ -21,15 +23,14 @@ h1,h2 {
 }
 nav {
     display: flex;
-    background: #0a85d8;
-    border-top: solid black thin;
-    border-bottom: solid black thin;
-    box-shadow: 0px 2px #888;
+    background: transparent;
+  
 }
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     font-weight: bold;
+    font-size: 70%;
 }
 nav p {
     text-align: center;
@@ -40,34 +41,46 @@ nav p {
 
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
-body {
-    font-family: 'Quicksand', sans-serif;
-    margin:100; /* Remove all the body margins*/
-    font-size: 120%
-}
 
 header {
     display: flex;
     align-items: center;
-    background: #0cbe9b;
+    background: transparent;
+    background-image: url('bannerforheader.jpg');
+    background-size: contain;
 }
 
 header h1{
     font-family: 'Shadows Into Light', cursive;
-    font-size: 400%
+    font-size: 200%;
     font-weight: lighter;
     color: black
 }
 footer{
-     background: #0a85d8; /* background or background 
+     background: #f7f7f7; /* background or background 
      color both works*/
+    background-image: url('footer1.jpg');
      position: fixed; /*fix to the vieport*/
      bottom: 0;/*Start 0 pixels from the bottom of the 
      viewport*/
      left: 0; /*Start 0 pixels from the left of the 
      viewportt*/
      width: 100%;/* Set the width to 100% of the viewport*/
-     height: 3em; /* Set the fotter elements height to 3 times larger than its current font size*/
+     height: 2em; /* Set the fotter elements height to 3 times larger than its current font size*/
      border-top: solid black 1px; /*Have to put the 
      unit; e.g. px or %, if not zero*/
+}
+.icon {
+    width: 200px;
+}
+
+@media only screen and (max-width: 800px) {
+    .icon {
+        width: 100px;
+    }
+    body{
+        font-family: 'Quicksand', sans-serif;
+        margin:0%; /* Remove all the body margins*/
+        font-size: 120%;
+    } 
 }
