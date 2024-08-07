@@ -10,9 +10,13 @@ body{
     margin-left:10%; /* Remove all the body margins*/
     margin-right: 10%;
     font-size: 120%;
-    background-image: url('new-zealand-map.jpg');
+}
+.backgroundmap{
+    background-image:url('new-zealand-map.jpg');
     background-size: cover;
-    background-position: no-repeat;
+    padding-left: 20px;
+    min-height: 100vh;
+}
 
 h1,h2 {
      font-family:gupter;
@@ -65,7 +69,8 @@ header {
     align-items: center;
     background: transparent;
     background-image: url('bannerforheader.jpg');
-    background-size: contain;
+    background-size: cover;
+    background-repeat: none;
 }
 
 header h1{
